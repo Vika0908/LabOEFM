@@ -1,0 +1,80 @@
+\subsection{Purpose and Procedure}
+ 
+
+The final part of the experiment involves replacing the light source with a sodium lamp. The purpose of this experiment was to measure the separation between the two sodium D-lines, which are closely spaced at approximately 6 Å (\(\lambda_1 = 5890 \, \text{Å}\) and \(\lambda_2 = 5896 \, \text{Å}\)). The sodium light source was introduced into the Michelson interferometer, and the interference fringes produced by the two closely spaced wavelengths were analyzed.
+
+A diaphragm and converging lens were placed between the sodium lamp and the beam splitter to filter and focus the light. This setup helped create a sharp interference pattern on the screen. The movable mirror (S3) was adjusted to measure the displacement (\(\Delta x\)) corresponding to one modulation cycle. This displacement was used to calculate the separation of the sodium doublet lines using the formula:
+
+\[
+\Delta \lambda = \frac{m \lambda^2}{2 \Delta x}
+\]
+
+Where:
+ \(\lambda = 5893 \, \text{Å}\) is the average wavelength of the sodium D-lines,
+ \(m\) is the number of sharp interference pattern transitions observed (for this experiment, \(m = 5\)),
+ \(\Delta x\) is the displacement measured during the experiment.
+\subsection{Analysis and Error Evaluation}
+
+The measured values of \(x_0\), \(x\), and \(\Delta x\) for the separation of the sodium D-lines: 
+
+\begin{table}[!htbp]
+    {\par\centering
+    \begin{tabular}{cccc}
+        \hline
+        Measure & $ x_0 \text{ (µm)}$ & $x \text{ (µm)}$ & $\Delta x$ \text{(mm)}\\
+        \hline
+        1   &   8060& 3790&   0.85 \\
+        2   &   6600& 13650&  1.41 \\
+        3   &   2300& 10700&  1.68 \\
+        4   &   5180& 12110&  1.39 \\
+        5   &   6620& 13610&  1.40 \\
+        6   &   8090& 15070&  1.40 \\
+        \hline
+    \end{tabular}
+    \par}
+    \caption{Measurement of the Separation of Sodium Doublet Lines }
+\end{table}
+
+
+
+In formula for \(\Delta \lambda\), \(m\) is an integer count of modulation cycles (with negligible uncertainty), and \(\lambda\) is taken from literature with no significant uncertainty compared to \(\Delta x\). Thus, the main source of error is in the measurement of \(\Delta x\).  Since \(\Delta \lambda \propto 1/\Delta x\), the uncertainty in \(\Delta \lambda\) can be found by propagating the uncertainty in \(\Delta x\):
+\[
+\varepsilon_{\Delta \lambda}^2 = \left(\frac{\partial \Delta \lambda}{\partial \Delta x}\varepsilon_{\Delta x}\right)^2.
+\]
+Therefore,
+\[
+\varepsilon_{\Delta \lambda} = \left|-\frac{m \lambda^2}{2 \Delta x^2}\right|\varepsilon_{\Delta x} = \frac{m \lambda^2}{2 \Delta x^2}\varepsilon_{\Delta x}.
+\]
+%It is often convenient to express the relative uncertainties. Since \(\Delta \lambda \propto \frac{1}{\Delta x}\):
+
+%\[
+%\frac{\varepsilon_{\Delta \lambda}}{\Delta \lambda} = \frac{\varepsilon_{\Delta x}}{\Delta x}.
+%\]
+
+%This shows the relative uncertainty in \(\Delta \lambda\) is the same as that in \(\Delta x\).
+
+%Assume the measured mean displacement is \(\bar{\Delta x} = (1.43 \pm 0.07)\,\text{mm}\). The relative uncertainty in \(\Delta x\) is \(\varepsilon_{\Delta x}/\Delta x = 0.07/1.43 \approx 0.049 \) (approximately 4.9%).
+
+%From the measured data, substituting \(\bar{\Delta x} = 1.43\,\text{mm}\), \(\lambda = 5893\,\text{Å}\), and \(m = 5\):
+
+%\[
+%\Delta \lambda = \frac{5 \times (5893\,\text{Å})^2}{2 \times 1.43\,\text{mm}}.
+%\]
+
+%Evaluating the numerator and keeping consistent units, yields approximately
+
+Since \(\Delta \lambda \approx 5.9\, \text{Å}\) and \(\varepsilon_{\Delta \lambda}/\Delta \lambda = \varepsilon_{\Delta x}/\Delta x \approx 0.049\), the absolute uncertainty in \(\Delta \lambda\) is:
+
+\[
+\varepsilon_{\Delta \lambda} \approx 5.9\,\text{Å} \times 0.049 \approx 0.3\,\text{Å}.
+\]
+
+The separation of Sodium Doublet Lines is: 
+
+\[
+\Delta \lambda = (5.9 \pm 0.3)\,\text{Å}.
+\]
+
+This result is in good agreement with the known separation of about 6 Å between the sodium D-lines. The dominant uncertainty arises from the measurement of \(\Delta x\). By using error propagation, the final uncertainty in \(\Delta \lambda\) is realistically estimated.
+
+
