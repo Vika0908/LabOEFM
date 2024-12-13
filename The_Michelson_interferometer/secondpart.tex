@@ -1,0 +1,39 @@
+\subsection{Purpose and Procedure}
+
+This part aims to determine the refractive index of air (\(n_a\)) under laboratory conditions using a Michelson interferometer. A cylindrical air chamber of length \(D = (5.0 \pm 0.1) \, \text{cm}\) was placed in one arm of the interferometer. Initially, the chamber was evacuated (\(n_a \approx 1\)), and air was gradually reintroduced. The changes in the optical path length caused interference fringes, which were counted to calculate the refractive index.  
+
+The refractive index was determined using the formula:  
+
+\[
+n_a = 1 + \frac{N \lambda}{2D},
+\]  
+
+where \(N\) is the number of fringes counted, \(\lambda = (636.0 \pm 5.8) \, \text{nm}\) is the laser wavelength, and \(D\) is the length of the air chamber. The uncertainties in \(n_a\) were evaluated by propagating the errors in \(N\), \(D\), and \(\lambda\).  
+
+\subsection{Analysis and Error Evaluation}
+
+The fringe counts (\(N\)), calculated refractive indices (\(n_a\)), and their uncertainties (\(\varepsilon_{n_a}\)) are presented below:  
+
+\begin{table}[!htbp]
+    {\par\centering
+    \begin{tabular}{cccс}
+        \hline
+        Measure & $N$ & $n_a$ & $\varepsilon_{n_a}$ \\
+        \hline
+        1   &   43& 1.00027& 1.76\times10^-5\\
+        2   &   42& 1.00027& 1.76\times10^-5 \\
+        3   &   42& 1.00027& 1.76\times10^-5 \\
+        4   &   41& 1.00026& 1.76\times10^-5 \\
+        5   &   41& 1.00026& 1.76\times10^-5 \\
+        \hline
+    \end{tabular}
+    \par}
+    \caption{Measurement of the Refractive Index of Air}
+\end{table}
+
+The uncertainties \(\varepsilon_{n_a}\) were calculated by propagating the errors in \(N\), \(d\), and \(\lambda\). The propagated uncertainty (\(\varepsilon_{n_a}\)) was used to evaluate the final error: 
+
+\[
+n_a = (1.00027 \pm 0.00002)
+\]  
+The main source of error was inconsistency in fringe counting. Automation of this process could improve precision. Propagation of uncertainty was chosen for the final error evaluation as it comprehensively accounts for all systematic and random contributions.
