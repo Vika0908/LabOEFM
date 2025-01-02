@@ -35,15 +35,25 @@ The measured values of \(x_0\), \(x\), and \(\Delta x\) for the separation of th
     \caption{Measurement of the Separation of Sodium Doublet Lines }
 \end{table}
 
-
-
-In formula for \(\Delta \lambda\), \(m\) is an integer count of modulation cycles (with negligible uncertainty), and \(\lambda\) is taken from literature with no significant uncertainty compared to \(\Delta x\). Thus, the main source of error is in the measurement of \(\Delta x\).  Since \(\Delta \lambda \propto 1/\Delta x\), the uncertainty in \(\Delta \lambda\) can be found by propagating the uncertainty in \(\Delta x\):
+From these measurements, the average mirror displacement is
 \[
-\varepsilon_{\Delta \lambda}^2 = \left(\frac{\partial \Delta \lambda}{\partial \Delta x}\varepsilon_{\Delta x}\right)^2.
+\overline{\Delta x} = (1.355 \pm 0.111)\,\text{mm}
 \]
-Therefore,
+
+In formula for \(\Delta \lambda\), \noindent
+$m$ is an integer count of modulation cycles (assumed exact), and 
+$\lambda$ is taken from the literature with negligible uncertainty relative to that of $\Delta x$. Therefore, the main source of uncertainty in 
+$\Delta \lambda$ comes from $\Delta x$.
+
+\medskip
+
+To propagate the uncertainty, we note that
+
 \[
-\varepsilon_{\Delta \lambda} = \left|-\frac{m \lambda^2}{2 \Delta x^2}\right|\varepsilon_{\Delta x} = \frac{m \lambda^2}{2 \Delta x^2}\varepsilon_{\Delta x}.
+\varepsilon_{\Delta \lambda}^2 = \left(\frac{\partial \Delta \lambda}{\partial \Delta x}\varepsilon_{\Delta x}\right)^2
+\], leading to
+\[
+\varepsilon_{\Delta \lambda} = \left|-\frac{m \lambda^2}{2 \Delta x^2}\right|\varepsilon_{\Delta x} = \frac{m \lambda^2}{2 \Delta x}\frac{\varepsilon_{\Delta x}}{\Delta x}=\Delta \lambda \frac{\varepsilon_{\Delta x}}{\Delta x}
 \]
 %It is often convenient to express the relative uncertainties. Since \(\Delta \lambda \propto \frac{1}{\Delta x}\):
 
@@ -63,18 +73,20 @@ Therefore,
 
 %Evaluating the numerator and keeping consistent units, yields approximately
 
-Since \(\Delta \lambda \approx 5.9\, \text{Å}\) and \(\varepsilon_{\Delta \lambda}/\Delta \lambda = \varepsilon_{\Delta x}/\Delta x \approx 0.049\), the absolute uncertainty in \(\Delta \lambda\) is:
+Since \(\Delta \lambda = 6.41\, \text{Å}\) and \(\varepsilon_{\Delta x}/\Delta x = 0.082\), the absolute uncertainty is
 
 \[
-\varepsilon_{\Delta \lambda} \approx 5.9\,\text{Å} \times 0.049 \approx 0.3\,\text{Å}.
+\varepsilon_{\Delta \lambda} =  6.41\,\text{Å} \times 0.082 \approx 0.53\,\text{Å}
 \]
 
-The separation of Sodium Doublet Lines is: 
+The final result for separation of the sodium D-lines is
 
 \[
-\Delta \lambda = (5.9 \pm 0.3)\,\text{Å}.
+\Delta \lambda = (6.41 \pm 0.53)\,\text{Å}
 \]
 
-This result is in good agreement with the known separation of about 6 Å between the sodium D-lines. The dominant uncertainty arises from the measurement of \(\Delta x\). By using error propagation, the final uncertainty in \(\Delta \lambda\) is realistically estimated.
+This result is in good agreement with the known separation of about 6 Å between the sodium D-lines. The dominant uncertainty arises from the measurement of \(\Delta x\). By using standard error propagation, the final uncertainty in \(\Delta \lambda\) is realistically estimated.
+
+
 
 
