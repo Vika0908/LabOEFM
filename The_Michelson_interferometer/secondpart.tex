@@ -8,32 +8,54 @@ The refractive index was determined using the formula:
 n_a = 1 + \frac{N \lambda}{2D},
 \]  
 
-where \(N\) is the number of fringes counted, \(\lambda = (636.0 \pm 5.8) \, \text{nm}\) is the laser wavelength, and \(D\) is the length of the air chamber. The uncertainties in \(n_a\) were evaluated by propagating the errors in \(N\), \(D\), and \(\lambda\).  
+where \(N\) is the number of fringes counted, \(\lambda = (635.7 \pm 5.8) \, \text{nm}\) is the laser wavelength, and \(D\) is the length of the air chamber. The uncertainties in \(n_a\) were evaluated by propagating the errors in \(N\), \(D\), and \(\lambda\).  
 
 \subsection{Analysis and Error Evaluation}
 
-The fringe counts (\(N\)), calculated refractive indices (\(n_a\)), and their uncertainties (\(\varepsilon_{n_a}\)) are presented below:  
 
-\begin{table}[!htbp]
-    {\par\centering
-    \begin{tabular}{cccс}
-        \hline
-        Measure & $N$ & $n_a$ & $\varepsilon_{n_a}$ \\
-        \hline
-        1   &   43& 1.00027& 1.76\times10^-5\\
-        2   &   42& 1.00027& 1.76\times10^-5 \\
-        3   &   42& 1.00027& 1.76\times10^-5 \\
-        4   &   41& 1.00026& 1.76\times10^-5 \\
-        5   &   41& 1.00026& 1.76\times10^-5 \\
-        \hline
-    \end{tabular}
-    \par}
-    \caption{Measurement of the Refractive Index of Air}
-\end{table}
-
-The uncertainties \(\varepsilon_{n_a}\) were calculated by propagating the errors in \(N\), \(d\), and \(\lambda\). The propagated uncertainty (\(\varepsilon_{n_a}\)) was used to evaluate the final error: 
+Table 2 presents the fringe counts \((N)\), their uncertainty \((\sigma_{N})\), the calculated refractive indices \((n_a)\), and their propagated uncertainties \((\sigma_{n_a})\). Each refractive index was computed using the formula
 
 \[
-n_a = (1.00027 \pm 0.00002)
-\]  
-The main source of error was inconsistency in fringe counting. Automation of this process could improve precision. Propagation of uncertainty was chosen for the final error evaluation as it comprehensively accounts for all systematic and random contributions.
+n_a = 1 + \frac{N\,\lambda}{2\,D},
+\]
+
+where \(N\), \(\lambda\), and \(D\) are measured quantities with uncertainties. The error \(\sigma_{n_a}\) for each entry was obtained via standard error propagation:
+
+\[
+(\sigma_{n_a})^2
+= \left(\frac{\partial n_a}{\partial N}\right)^2 \bigl(\sigma_N\bigr)^2
++ \left(\frac{\partial n_a}{\partial \lambda}\right)^2 \bigl(\sigma_\lambda\bigr)^2
++ \left(\frac{\partial n_a}{\partial D}\right)^2 \bigl(\sigma_D\bigr)^2,
+\]
+
+with
+\[
+\frac{\partial n_a}{\partial N} = \frac{\lambda}{2\,D}, \quad
+\frac{\partial n_a}{\partial \lambda} = \frac{N}{2\,D}, \quad
+\frac{\partial n_a}{\partial D} = -\,\frac{N\,\lambda}{2\,D^2}.
+\]
+
+\begin{table}[!htbp]
+    \centering
+    \begin{tabular}{ccccc}
+        \hline
+        \text{Measure} & \({N}\) & \({\sigma_{N}}\) & \({n_a}\) & \({\sigma_{n_a}}\) \\
+        \hline
+        1 & 43 & 2 & 1.000273 & \(1.41\times10^{-5}\) \\
+        2 & 42 & 2 & 1.000267 & \(1.40\times10^{-5}\) \\
+        3 & 42 & 2 & 1.000267 & \(1.40\times10^{-5}\) \\
+        4 & 41 & 2 & 1.000261 & \(1.39\times10^{-5}\) \\
+        5 & 41 & 2 & 1.000261 & \(1.39\times10^{-5}\) \\
+        \hline
+    \end{tabular}
+    \caption{Measurement of the Refractive Index of Air}
+   
+\end{table}
+
+Averaging these five values gives a final refractive index:
+
+\[
+n_a = (1.000267 \pm 0.000014).
+\]
+
+The main source of error was the uncertainty in the fringe count (\(\pm 2\)). Automation of the counting process would likely improve precision. Error propagation was chosen as it properly combines the contributions from \(\sigma_{N}\), \(\sigma_\lambda\), and \(\sigma_D\), thereby accounting for both systematic and random effects.
